@@ -12,7 +12,7 @@
 			var cell = {}
 
 			{% if overload_type%}
-			var c_{{clazz_hook}}_{{ method_hook }} = eval("c_{{clazz_hook}}.{{ method_name }}.overload({{overload_type}})")
+			var c_{{clazz_hook}}_{{ method_hook }} = eval("c_{{clazz_hook}}.{{ method_name }}.overload('{{overload_type}}')")
 			c_{{clazz_hook}}_{{ method_hook }}.implementation = function () {
 				var sendback = ''
 				var hook_signature = '-hoo00ook-'

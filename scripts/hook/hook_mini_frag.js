@@ -11,7 +11,7 @@
 			var c_{{clazz_hook}}_{{ method_hook }} = null;
 
 			{% if overload_type%}
-			var c_{{clazz_hook}}_{{ method_hook }} = eval("c_{{clazz_hook}}.{{ method_name }}.overload({{overload_type}})");
+			var c_{{clazz_hook}}_{{ method_hook }} = eval("c_{{clazz_hook}}.{{ method_name }}.overload('{{overload_type}}')");
 			c_{{clazz_hook}}_{{ method_hook }}.implementation = function () {
 				var method_info = '';
 				var arg_dump = '';
